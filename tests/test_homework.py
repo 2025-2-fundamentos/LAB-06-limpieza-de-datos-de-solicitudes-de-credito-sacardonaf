@@ -17,6 +17,8 @@ def test_01():
 
     df = pd.read_csv("files/output/solicitudes_de_credito.csv", sep=";")
 
+    print(df)
+
     # Test:
     assert df.sexo.value_counts().to_list() == [6617, 3589]
 
